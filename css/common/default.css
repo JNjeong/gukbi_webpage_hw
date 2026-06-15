@@ -113,3 +113,33 @@ body {
 .footer_line > p> span{
     display:block;
 }
+
+
+@media (max-width:768px) {
+    .header_box{
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+    .header_box > .logo > img{
+        width : 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width:400px) {
+    .header{
+        height: 130px;
+    }
+    .header_box{
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+        .header_box > .logo > img{
+        width : 80px;
+        height: 80px;
+    }
+    .footer{
+        font-size:0.666rem;
+    }
+
+}

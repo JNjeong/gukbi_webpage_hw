@@ -45,7 +45,7 @@
     border-radius: 10px;
     text-align: center;
     margin: 10px;
-    height: 300px;
+    height: 350px;
 }
 .card:hover{
     animation: zoom 0.3s ease-in 0s 1 alternate forwards;
@@ -61,4 +61,46 @@
 }
 .card > .food_content{
     font-size: 1.1rem;
+}
+
+@media (max-width:768px) {
+    .main > .intro > .title{
+        font-size: 1.7rem;
+    }
+    .main > .intro > .intro_p{
+        font-size: 1.4rem;
+    }
+    .food_list table > tr{
+        display:flex;
+        flex-direction: column;
+    }
+    .food_list table td{
+        display:block;
+        width: 100%;
+    }
+    .card {
+        min-height : 450px;
+    }
+}
+
+@media (max-width:400px) {
+    .main > .intro > .title{
+        font-size: 1.1rem;
+    }
+    .main > .intro > .empty_space{
+        height: 100px;
+    }
+    .main > .intro > .intro_p{
+        font-size: 0.9rem;
+    }
+    .food_list > .list_title{
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .card {
+        height: 300px;
+        min-height : 300px;
+    }
+
 }
