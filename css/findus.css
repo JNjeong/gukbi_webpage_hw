@@ -8,12 +8,12 @@
     height: 80%;
 }
 
+/* 모바일 반응형 */
 @media (max-width:400px) {
     .findus_title{
         margin-top: 20px;
         margin-bottom: 10px;
         font-size: 1.2rem;
     }
-
 }
 

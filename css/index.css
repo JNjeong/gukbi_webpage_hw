@@ -63,6 +63,7 @@
     font-size: 1.1rem;
 }
 
+/* 태블릿 반응형 */
 @media (max-width:768px) {
     .main > .intro > .title{
         font-size: 1.7rem;
@@ -83,6 +84,7 @@
     }
 }
 
+/* 모바일 반응형 */
 @media (max-width:400px) {
     .main > .intro > .title{
         font-size: 1.1rem;
