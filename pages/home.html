@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한입하자</title>
+    <link rel="icon" href="../images/logo.ico" />
+    <link rel="stylesheet" href="../css/common/reset.css" />
+    <link rel="stylesheet" href="../css/common/normalize.css" />
+    <link rel="stylesheet" href="../css/common/default.css" />
+    <link rel="stylesheet" href="../css/common/" />
+
+    <link rel="stylesheet" href="../css/home.css" />
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const topbtn = document.querySelector(".top");
+
+        topbtn.addEventListener("click", () => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+
+        const downbtn = document.querySelector(".down");
+        downbtn.addEventListener("click", () => {
+          window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: "smooth", // 맨 아래로 부드럽게 스크롤
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header_box">
+          <div class="logo">
+            <img src="../images/logo.png" alt="로고이미지" />
+          </div>
+          <nav class="header_nav">
+            <ul>
+              <li>
+                <a href="../pages/home.html"><h3>한입하자</h3></a>
+              </li>
+              <li>
+                <a href="../pages/menu.html">
+                  <h3>맛집탐방</h3>
+                </a>
+              </li>
+              <li>
+                <a href="../pages/findus.html">
+                  <h3>찾아오는길</h3>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="main">
+        <div class="intro">
+          <div class="title">
+            <h1>"오늘의 한 끼, 최고의 맛집에서"</h1>
+          </div>
+          <div class="empty_space"></div>
+          <div class="intro_p">
+            <p>
+              “우리는 단순히 맛집을 소개하는 데 그치지 않습니다. <br />
+              따뜻한 밥 한 끼가 주는 위로, 함께 나누는 식탁의 즐거움,
+              <br />
+              그리고 좋은 음식을 찾고자 하는 우리의 의지를 담아 이곳을
+              만들었습니다.
+              <br />
+              당신의 하루가 조금 더 포근해지길, 우리의 작은 안내가 그 길을
+              밝혀주길 바랍니다.”
+            </p>
+          </div>
+        </div>
+        <div class="food_list">
+          <div class="list_title"><h3>맛집들을 소개할게요!</h3></div>
+          <table>
+            <tr>
+              <td>
+                <div class="card">
+                  <div class="food_img">
+                    <img src="../images/main_food1.png" alt="김치볶음밥사진" />
+                  </div>
+                  <div class="food_title"><h3>김치볶음밥 연구소</h3></div>
+                  <div class="food_content">
+                    <p>계란 후라이가 곁들어진 한국음식 김치볶음밥 요리</p>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="card">
+                  <div class="food_img">
+                    <img src="../images/main_food2.png" alt="짜장면사진" />
+                  </div>
+                  <div class="food_title"><h3>홍운루(紅雲樓)</h3></div>
+                  <div class="food_content">
+                    <p>춘장의 깊은 풍미를 담은 한국식 중화면, 짜장면</p>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="card">
+                  <div class="food_img">
+                    <img
+                      src="../images/main_food3.png"
+                      alt="닭가슴살스테이크사진"
+                    />
+                  </div>
+                  <div class="food_title"><h3>가든 플레이트</h3></div>
+                  <div class="food_content">
+                    <p>
+                      레몬, 토마토, 칠리, 당근을 담은 치킨 닭가슴살 스테이크
+                    </p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="card">
+                  <div class="food_img">
+                    <img src="../images/main_food4.png" alt="생태탕사진" />
+                  </div>
+                  <div class="food_title"><h3>해찬정(海餐亭)</h3></div>
+                  <div class="food_content">
+                    <p>새우가 맛있는 한국의 생태탕 요리</p>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="card">
+                  <div class="food_img">
+                    <img src="../images/main_food5.png" alt="부타동사진" />
+                  </div>
+                  <div class="food_title"><h3>한그릇 정원</h3></div>
+                  <div class="food_content">
+                    <p>
+                      아삭한 당근과 오이채가 더해진 담백한 돼지고기 덮밥, 부타동
+                    </p>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="card">
+                  <div class="food_img">
+                    <img src="../images/main_food6.png" alt="떡볶이사진" />
+                  </div>
+                  <div class="food_title"><h3>노른자 한술</h3></div>
+                  <div class="food_content">
+                    <p>
+                      매콤달콤한 국물 위에 반숙 계란이 녹아내리는 따듯한 냄비
+                      떡볶이
+                    </p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="card">
+                  <div class="food_img">
+                    <img src="../images/main_food7.png" alt="탄두리치킨사진" />
+                  </div>
+                  <div class="food_title"><h3>커리앤난</h3></div>
+                  <div class="food_content">
+                    <p>향신료에 깊게 스며진 탄두리 치킨과 정통 인도풍 한상</p>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="card">
+                  <div class="food_img">
+                    <img src="../images/main_food8.png" alt="샐러드빵사진" />
+                  </div>
+                  <div class="food_title"><h3>그린테이블</h3></div>
+                  <div class="food_content">
+                    <p>아삭한 채소와 고소한 우유식빵이 어우러진 건강한 한 끼</p>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="card">
+                  <div class="food_img">
+                    <img src="../images/main_food9.png" alt="오뎅탕사진" />
+                  </div>
+                  <div class="food_title"><h3>노렌집(暖簾屋)</h3></div>
+                  <div class="food_content">
+                    <p>
+                      국물속 깊은 맛과 따끈하 어묵이 술 한잔을 부르는 오뎅탕
+                    </p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="topdown">
+          <div class="top">△</div>
+          <div class="down">▽</div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer_line">
+          <p><span>개인정보처리방침</span></p>
+        </div>
+        <div class="footer_line">
+          <p>
+            <span>(주)한입하자</span><span>사업자등록번호 235-73-23580</span
+            ><span>대표 정준홍</span>
+          </p>
+        </div>
+        <div class="footer_line">
+          <p>
+            <span>주소: 서울특별시 테헤란로 146 현익빌딩 3층</span
+            ><span>팩스: 02-426-1569</span>
+          </p>
+        </div>
+        <div class="footer_line">
+          <p>
+            <span>본사 대표전화: 02-496-6532</span
+            ><span>후원전화: 02-4985-3643</span><span>고객센터: 1544-4615</span>
+          </p>
+        </div>
+        <div class="footer_line">
+          <p>COPYRIGHTⓒ2026 HANEATHAJA INC. ALL RIGHTS RESERVED</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

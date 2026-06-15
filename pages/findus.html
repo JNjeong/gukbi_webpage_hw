@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한입하자</title>
+    <link rel="icon" href="../images/logo.ico" />
+    <link rel="stylesheet" href="../css/common/reset.css" />
+    <link rel="stylesheet" href="../css/common/normalize.css" />
+    <link rel="stylesheet" href="../css/common/default.css" />
+    <link rel="stylesheet" href="../css/common/animations.css" />
+
+    <link rel="stylesheet" href="../css/findus.css" />
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const topbtn = document.querySelector(".top");
+
+        topbtn.addEventListener("click", () => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth", 
+          });
+        });
+
+        const downbtn = document.querySelector(".down");
+        downbtn.addEventListener("click", () => {
+          window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: "smooth", // 맨 아래로 부드럽게 스크롤
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header_box">
+          <div class="logo">
+            <img src="../images/logo.png" alt="로고이미지" />
+          </div>
+          <nav class="header_nav">
+            <ul>
+              <li>
+                <a href="../pages/home.html"><h3>한입하자</h3></a>
+              </li>
+              <li>
+                <a href="../pages/menu.html">
+                  <h3">맛집탐방</h3>
+                </a>
+              </li>
+              <li>
+                <a href="../pages/findus.html">
+                  <h3>찾아오는길</h3>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="main">
+        <h1 class="findus_title">찾아오는 길</h1>
+        <img src="../images/location.png" alt="위치사진" class="findus_location" />
+      </div>
+      <div class="sidebar">
+        <div class="topdown">
+          <div class="top">△</div>
+          <div class="down">▽</div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer_line">
+          <p><span>개인정보처리방침</span></p>
+        </div>
+        <div class="footer_line">
+          <p>
+            <span>(주)한입하자</span><span>사업자등록번호 235-73-23580</span
+            ><span>대표 정준홍</span>
+          </p>
+        </div>
+        <div class="footer_line">
+          <p>
+            <span>주소: 서울특별시 테헤란로 146 현익빌딩 3층</span
+            ><span>팩스: 02-426-1569</span>
+          </p>
+        </div>
+        <div class="footer_line">
+          <p>
+            <span>본사 대표전화: 02-496-6532</span
+            ><span>후원전화: 02-4985-3643</span><span>고객센터: 1544-4615</span>
+          </p>
+        </div>
+        <div class="footer_line">
+          <p>COPYRIGHTⓒ2026 HANEATHAJA INC. ALL RIGHTS RESERVED</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

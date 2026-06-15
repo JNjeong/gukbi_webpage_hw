@@ -1,0 +1,115 @@
+/* 폰트 */
+@font-face {
+    font-family: 'OneStoreMobilePop';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Juache';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OmuDaye';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+:root{
+    --main-color: #F26A3D;
+    --word-color: #4A312A;
+    --sub-color:#f7f3ee;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: OneStoreMobilePop;
+    color: var(--word-color);
+}
+*{
+    box-sizing: border-box;
+}
+body {
+    width:100%;
+    height:100%;
+    font-family: Juache, OmuDaye;
+    background-color: var(--sub-color);
+}
+
+.container { 
+    width: 100%;
+    height: 100%;
+    display: flexbox;
+    flex-direction: column;
+}
+.header {
+    
+    width: 100%;
+    height: 200px;
+    border-bottom: 0.1px solid var(--word-color);
+    padding: 30px 30px;
+}
+.header_box{
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: end;
+}
+.header_box > .logo > img{
+    width : 150px;
+    height: 150px;
+}
+.header_nav{
+    margin: 0 auto;
+    width: 50%;
+    color: var(--main-color)
+}
+.header_nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+.main{  
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+    flex:1;
+}
+
+.sidebar{
+    position:fixed;
+    right: 0;
+    top: 50%;
+}
+.sidebar > .topdown{
+    width: 30px;
+    height: 40px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.sidebar > .topdown > div{
+    margin-bottom: 10px;
+}
+.top:hover, .down:hover{
+    cursor: pointer;
+}
+
+.footer{
+    border-top: 0.1px solid var(--word-color);
+    width:100%;
+    height: auto;
+    padding: 30px;
+    margin: 20px 0 0 0;
+
+}
+.footer_line > p{
+    display:flex;
+    justify-content: space-between;
+}
+.footer_line > p> span{
+    display:block;
+}

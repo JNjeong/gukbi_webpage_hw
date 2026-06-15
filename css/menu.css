@@ -1,0 +1,23 @@
+.main > .content{
+    width:100%;
+    height: auto;
+    background-image: url("../images/menu_intro_background.png");
+    background-image: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding : 20px 70px;
+}
+
+.main > .content > h1 {
+    font-size: 2.6rem;
+}
+.main > .content > img{
+    display: block;
+    margin: 30px auto;
+    width:80%;
+}
+
+.main > .content > p{
+    font-size: 1.4rem;
+    margin-bottom: 20px; 
+}

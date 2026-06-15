@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한입하자</title>
+    <link rel="icon" href="../images/logo.ico" />
+    <link rel="stylesheet" href="../css/common/reset.css" />
+    <link rel="stylesheet" href="../css/common/normalize.css" />
+    <link rel="stylesheet" href="../css/common/default.css" />
+    <link rel="stylesheet" href="../css/common/animations.css" />
+
+    <link rel="stylesheet" href="../css/menu.css" />
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const topbtn = document.querySelector(".top");
+
+        topbtn.addEventListener("click", () => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+
+        const downbtn = document.querySelector(".down");
+        downbtn.addEventListener("click", () => {
+          window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header_box">
+          <div class="logo">
+            <img src="../images/logo.png" alt="로고이미지" />
+          </div>
+          <nav class="header_nav">
+            <ul>
+              <li>
+                <a href="../pages/home.html"><h3>한입하자</h3></a>
+              </li>
+              <li>
+                <a href="../pages/menu.html">
+                  <h3>맛집탐방</h3>
+                </a>
+              </li>
+              <li>
+                <a href="../pages/findus.html">
+                  <h3>찾아오는길</h3>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="main">
+        <div class="content">
+          <h1>불판 위의 행복, 한입 가득 삼겹살</h1>
+          <img src="../images/food.png" alt="음식사진" />
+          <p>
+            뜨거운 불판 위에서 지글지글 구워지는 두툼한 삼겹살은 한국인의
+            소울푸드라 불릴 만큼 사랑받는 메뉴입니다. 고소한 육즙이 터져 나오고,
+            옆에는 청양고추와 마늘이 함께 익어가며 풍미를 더합니다.
+          </p>
+          <p>
+            이 집의 매력은 단순히 고기 맛에만 있지 않습니다. 김치찌개 속 두부와
+            버섯이 깊은 국물 맛을 내고, 신선한 채소와 계란이 올라간 비빔밥은
+            고기와 환상의 조화를 이룹니다.
+          </p>
+          <p>
+            또한 소주 한 잔과 함께 즐기는 분위기는 친구, 가족, 연인 누구와 와도
+            즐겁습니다. 직접 고기를 뒤집으며 함께하는 시간은 단순한 식사가
+            아니라 하나의 추억이 됩니다.
+          </p>
+          <p>
+            한입 베어 물면 입안 가득 퍼지는 풍미, 바로 이곳이 ‘한입하자’라는
+            이름에 걸맞은 진정한 맛집입니다.
+          </p>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="topdown">
+          <div class="top">△</div>
+          <div class="down">▽</div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer_line">
+          <p><span>개인정보처리방침</span></p>
+        </div>
+        <div class="footer_line">
+          <p>
+            <span>(주)한입하자</span><span>사업자등록번호 235-73-23580</span
+            ><span>대표 정준홍</span>
+          </p>
+        </div>
+        <div class="footer_line">
+          <p>
+            <span>주소: 서울특별시 테헤란로 146 현익빌딩 3층</span
+            ><span>팩스: 02-426-1569</span>
+          </p>
+        </div>
+        <div class="footer_line">
+          <p>
+            <span>본사 대표전화: 02-496-6532</span
+            ><span>후원전화: 02-4985-3643</span><span>고객센터: 1544-4615</span>
+          </p>
+        </div>
+        <div class="footer_line">
+          <p>COPYRIGHTⓒ2026 HANEATHAJA INC. ALL RIGHTS RESERVED</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
